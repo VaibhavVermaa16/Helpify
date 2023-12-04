@@ -22,6 +22,65 @@ body {
   );
 }
 
+/* Top nv bar */
+#logoimg {
+  width: 200px;
+  height: 50px;
+}
+
+.navbar {
+  background: rgb(0, 2, 124);
+  background: linear-gradient(
+    90deg,
+    rgb(5, 0, 63) 0%,
+    rgb(5, 59, 116) 43%,
+    rgb(0, 47, 104) 100%
+  );
+}
+
+.signup button:hover {
+  background-color: rgb(26, 155, 3);
+}
+
+/* Links of navigation bar home, about us etc */
+#links a {
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #b1d1fd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#links {
+  align-self: center;
+}
+
+#links a:hover {
+  color: #f1f7ff;
+  background-color: rgb(80, 109, 255);
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-links li {
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+/* Top navbar ends */
+
 /* common styles */
 img {
   width: 100%;

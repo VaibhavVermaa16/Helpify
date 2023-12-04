@@ -17,14 +17,14 @@
 
         <nav class="navbar d-fluid">
             <div id="logo">
-                <img id="logoimg" src="helpify.png" alt="">
+                <img id="logoimg" src="images/helpify.png" alt="">
             </div>
             <div id="links">
                 <ul class="nav-links">
-                    <li><b><a class="lnk" href="#">Home</a></b></li>
-                    <li><b><a class="lnk" href="#">About Us</a></b></li>
-                    <li><b><a class="lnk" href="#">Contact Us</a></b></li>
-                    <li><b><a class="lnk" href="Profile.html">Profile</a></b></li>
+                    <li><a class="lnk" href="index.html">Home</a></li>
+                    <li><a class="lnk" href="Aboutus.html">About Us</a></li>
+                    <li><a class="lnk" href="ContactUs.html">Contact Us</a></li>
+                    <li><a class="lnk" href="Profile.html">Profile</a></li>
                 </ul>
             </div>
             <div class="signup">
@@ -100,8 +100,8 @@
                     <div class="d-flex" style="flex-direction: column; justify-content:space-between">
                         <button type="button" class="btn  p-3" style="background-color: transparent; color:rgb(0, 0, 0)"
                             onclick="edit()"> <i class="fas fa-pencil-alt"></i></button>
-                        <button type="button" class="btn p-2" id="save" style="background-color: rgb(11, 129, 0); color:white"
-                            onclick="save()">Save</button>
+                        <button type="button" class="btn p-2" id="save"
+                            style="background-color: rgb(11, 129, 0); color:white" onclick="save()">Save</button>
                     </div>
                 </div>
             </div>
@@ -150,14 +150,14 @@
             <script
                 src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
             <script>
-                document.getElementById("save").hidden=true;
+                document.getElementById("save").hidden = true;
                 function edit() {
                     let inputElements = document.getElementsByClassName("data");
                     for (var i = 0; i < inputElements.length; i++) {
                         inputElements[i].disabled = false;
                         console.log("Hello")
                     }
-                    document.getElementById("save").hidden=false;
+                    document.getElementById("save").hidden = false;
                 }
 
                 function save() {
@@ -167,7 +167,7 @@
                         inputElements[i].setAttribute("value", inputValue);
                         inputElements[i].disabled = true;
                     }
-                    document.getElementById("save").hidden=true;
+                    document.getElementById("save").hidden = true;
 
                 }
             </script>

@@ -110,117 +110,62 @@ overflow: hidden;
 
 /* NAVBAR CSS */
 
-#navbar {
-background-color: rgb(112, 193, 250);
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 0px;
+#logoimg {
+  width: 200px;
+  height: 50px;
 }
 
-.navbar{
-background: rgb(0, 2, 124);
-background: linear-gradient(
-  90deg,
-  rgb(5, 0, 63) 0%,
-  rgb(5, 59, 116) 43%,
-  rgb(0, 47, 104) 100%
-);
-  background-color: #cdeff0;
-  
+.navbar {
+  background: rgb(0, 2, 124);
+  background: linear-gradient(
+    90deg,
+    rgb(5, 0, 63) 0%,
+    rgb(5, 59, 116) 43%,
+    rgb(0, 47, 104) 100%
+  );
 }
 
-html { overflow-y: scroll; }
+.signup button:hover {
+  background-color: rgb(26, 155, 3);
+}
 
-
+/* Links of navigation bar home, about us etc */
 #links a {
-
-text-decoration: none;
-font-size:20px;
-text-decoration:none;
-color: #b1d1fd;
-border-radius: 5px;
-padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #b1d1fd;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 #links {
-align-self: center;
+  align-self: center;
 }
 
 #links a:hover {
-color: #f1f7ff;
-background-color:rgb(80, 109, 255);
+  color: #f1f7ff;
+  background-color: rgb(80, 109, 255);
 }
 
 .nav-links {
-list-style-type: none;
-margin: 0;
-padding: 20px;
-display: flex;
-align-items: center;
-text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .nav-links li {
-margin: 0 30px;
-text-decoration: none;
+  margin: 0 30px;
+  text-decoration: none;
 }
 
 .nav-links li:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
 
-#logo {
-width: 200px;
-height:50px;
-height: auto;
-/* border:0.5px solid white; */
-}
-
-#logoimg {
-width: 200px;
-height: 50px;
-}
-
-#navbar-top {
-z-index: 0;
-margin: 2px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-background-color: transparent;
-color: rgb(2, 22, 103);
-border-bottom: 1px solid rgb(41, 40, 40);
-height: 7vh;
-}
-
-#title {
-font-family: sans-serif;
-padding-top: 15px;
-position: absolute;
-left: 45%;
-}
-
-#navbar-top ul {
-float: right;
-list-style-type: none;
-margin: 0;
-overflow: hidden;
-padding: 18px 50px 0 40px;
-}
-
-#navbar-top ul li {
-float: left;
-}
-
-#navbar-top ul li a {
-display: flex;
-color: #000000;
-padding: 14px 20px;
-text-align: center;
-justify-content: baseline;
-text-decoration: none;
-}
 
 
 
@@ -297,11 +242,11 @@ text-decoration: none;
   /* animation:slideAnimation 4s infinite; */
   
     opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;}
+    animation: fadeIn 1s ease-out ;}
 
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0.6;
     }
     to {
         opacity: 1;
