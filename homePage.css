@@ -10,7 +10,7 @@
     font-size: 20px;
     color:rgb(53, 105, 53);
 }
-.container{
+.ctnr{
     display:flex;
     height:700px;
     flex-direction:row;
@@ -23,7 +23,7 @@
     margin-bottom: 5%;
     transition-duration: 0.5s;
 }
-.container:hover{
+.ctnr:hover{
   box-shadow:5px 5px 5px 5px rgb(13, 70, 70);
 }
 .container1{
