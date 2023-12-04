@@ -17,13 +17,13 @@
 
         <nav class="navbar d-fluid">
             <div id="logo">
-                <img id="logoimg" src="images/helpify.png" alt="">
+                <img id="logoimg" src="helpify.png" alt="">
             </div>
             <div id="links">
                 <ul class="nav-links">
-                    <li><b><a class="lnk" href="homepage.html">Home</a></b></li>
+                    <li><b><a class="lnk" href="#">Home</a></b></li>
                     <li><b><a class="lnk" href="#">About Us</a></b></li>
-                    <li><b><a class="lnk" href="ContactUs.html">Contact Us</a></b></li>
+                    <li><b><a class="lnk" href="#">Contact Us</a></b></li>
                     <li><b><a class="lnk" href="Profile.html">Profile</a></b></li>
                 </ul>
             </div>
@@ -67,41 +67,50 @@
                 <h1>Profile</h1>
             </div>
             <div class="card">
-                <div class="card-body">
+                <div class="card-body d-flex">
                     <table>
                         <tbody>
                             <tr>
                                 <td class="name fw-bolder">Name</td>
                                 <td>:</td>
-                                <td>Username</td>
+                                <td> <input type="text" class="data" value="Username" disabled></td>
                             </tr>
                             <tr>
                                 <td class="name fw-bolder">Email</td>
                                 <td>:</td>
-                                <td>username@helpify.com</td>
+                                <td><input type="text" class="data" value="username@helpify.com" disabled></td>
                             </tr>
                             <tr>
                                 <td class="name fw-bolder">Address</td>
                                 <td>:</td>
-                                <td>India</td>
+                                <td><input type="text" class="data" value="India" disabled></td>
                             </tr>
                             <tr>
                                 <td class="name fw-bolder">Work</td>
                                 <td>:</td>
-                                <td>Caretaker for kids, Lending agricultural utilities</td>
+                                <td><input type="text" class="data"
+                                        value="Caretaker for kids, Lending agricultural utilities" disabled></td>
                             </tr>
                             <tr>
                                 <td class="name fw-bolder">Experience</td>
                                 <td>:</td>
-                                <td>Any relatable experience</td>
+                                <td><input type="text" class="data" value="Any relatable experience" disabled></td>
                             </tr>
                         </tbody>
                     </table>
+                    <div class="d-flex" style="flex-direction: column; justify-content:space-between">
+                        <button type="button" class="btn  p-3" style="background-color: transparent; color:rgb(0, 0, 0)"
+                            onclick="edit()"> <i class="fas fa-pencil-alt"></i></button>
+                        <button type="button" class="btn p-2" id="save" style="background-color: rgb(11, 129, 0); color:white"
+                            onclick="save()">Save</button>
+                    </div>
                 </div>
             </div>
             <hr>
             <div class="social ">
-                <div><h2>Social Media</h2></div>
+                <div>
+                    <h2>Social Media</h2>
+                </div>
                 <div class="card-body">
                     <div id="dock">
                         <span class="dock-item">
@@ -141,6 +150,30 @@
 
             <script
                 src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+            <!-- <script src="script.js"></script> -->
+            <script>
+                document.getElementById("save").hidden=true;
+                function edit() {
+                    let inputElements = document.getElementsByClassName("data");
+                    for (var i = 0; i < inputElements.length; i++) {
+                        inputElements[i].disabled = false;
+                        console.log("Hello")
+                    }
+                    document.getElementById("save").hidden=false;
+                }
+
+                function save() {
+                    let inputElements = document.getElementsByClassName("data");
+                    for (var i = 0; i < inputElements.length; i++) {
+                        let inputValue = inputElements[i].value;
+                        inputElements[i].setAttribute("value", inputValue);
+                        inputElements[i].disabled = true;
+                    }
+                    document.getElementById("save").hidden=true;
+
+                }
+            </script>
+
 </body>
 
 </html>

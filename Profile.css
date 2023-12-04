@@ -157,6 +157,11 @@ body {
   margin-bottom: 20px;
   padding: 20px 0 20px 50px;
 }
+
+.data{
+  background-color: transparent;
+  border: none;
+}
 /* Personal Details part ends */
 
 /* Social media */
