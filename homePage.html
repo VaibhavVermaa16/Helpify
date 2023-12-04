@@ -18,6 +18,66 @@
 </head>
 
 <body style="background-color: #CDEFF0;">
+    
+       <!-- navbar -->
+       <div class="navbar-top">
+        <nav class="navbar d-fluid">
+          <div id="logo">
+            <img id="logoimg" src="images/logo.png" alt="" />
+          </div>
+          <div id="links">
+            <ul class="nav-links">
+              <li><a class="lnk" href="#">Home</a></li>
+              <li><a class="lnk" href="#">About Us</a></li>
+              <li><a class="lnk" href="#">Contact Us</a></li>
+              <li><a class="lnk" href="#">Profile</a></li>
+            </ul>
+          </div>
+          <div class="signup">
+            <button type="button" class="btn btn-primary m-3">Sign-Up</button>
+          </div>
+        </nav>
+      </div>
+      <!-- navbar ends -->
+      <!-- body starts -->
+      <div id="parent" style="display: flex">
+        <div id="banner1" class="container col-md-6 my-5">
+          <h1 style="padding-left: 9px; color: rgb(187, 3, 172)">Welcome to</h1>
+          <h1 id="Helpify">HELPIFY!</h1>
+          <br />
+          <br />
+          <p style="font-size: 20px">
+            We are here to help you with your problems and solve them for you. Get
+            connected with us avail professional farm and care taking services. At
+            the crossroads of tradition and innovation, we pride ourselves on
+            providing top-notch farm care and caretaking services for agricultural
+            ventures of all sizes.
+          </p>
+          <p style="font-size: 20px">So, let's get Started !</p>
+          <br />
+          <button class="btn-primary col-md-4 toggles">About Us</button>
+          <button class="btn-primary col-md-4 toggles">Services</button>
+        </div>
+        <div class="- container col-md-6 my-4">
+          <div
+            id="banner2"
+            onmouseover="adding()"
+            onmouseout="deleting()"
+            class="banner container col-md-12 my-4"
+          ></div>
+          <div>
+            <button onmouseover="adding()" id="text" class="col-md-2">
+              Know More
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- body ends -->
+    
+    
+    <!-- Nachiket code ends -->
+    <!-- Hardee code start -->
+    
     <br>
     <div class="doubt">
     <ul id="ourService"><li>
@@ -99,8 +159,45 @@
             safe with our staff.</p>
         </div>
     </div>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <!-- Hardee written script start -->
+    <script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- hardee written script ends -->
+    <!-- Nachiket written script start -->
+    <script >
+        let btn = document.getElementById("text");
+        btn.style.opacity="0"
+        console.log("js mc hai")
+        // var banner = document.getElementById("banner")
+        // banner.addEventListener("mouseover",adding());
+        
+        function adding(){
+            btn.style.opacity="1"
+            document.getElementById("banner2").style.filter="blur(2px)"
+           
+        }
+        
+        function deleting(){
+            btn.style.opacity="0"
+            document.getElementById("banner2").style.filter="blur(0px)"
+        
+        }
+  
+  
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Nachiket written script ends -->
 </body>
 <footer class="footer">
     
