@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/d760470b47.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Login</title>
+    <link rel="stylesheet" href="Signup.css">
+</head>
+
+<body class="body" style="background-image: url(images/Farmcare.jpg); background-size: cover;">
+
+    <div class="navbar-top">
+        <nav class="navbar d-fluid">
+          <div id="logo">
+            <img id="logoimg" src="images/helpify.png" alt="" />
+          </div>
+          <div id="links">
+            <ul class="nav-links">
+              <li><a class="lnk" href="#">Home</a></li>
+              <li><a class="lnk" href="#">About Us</a></li>
+              <li><a class="lnk" href="#">Contact Us</a></li>
+              <li><a class="lnk" href="#">Profile</a></li>
+            </ul>
+          </div>
+          <div class="signup">
+            <button type="button" class="btn btn-primary m-3">Sign-Up</button>
+          </div>
+        </nav>
+      </div>
+    <div class="container d-flex main-log-in">
+        <div class="container m-0 p-5 col-md-4 test">
+            <div class="d-flex m-0 justify-content-center">
+                <h1>Login</h1>
+            </div>
+            <form action="" >
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="User Name">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="pswd" placeholder="Password">
+                </div>
+                <a style="color: black; position:relative;" class="m-3" href="SignupEdited.html"> Don't have an account?</a>
+                <div class="btn-field d-flex justify-content-center">
+                    <button type="button" class="signupbtn btn mt-4" >Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function checkpswd() {
+            let pass = document.getElementById("pswd").value;
+            let cnpass = document.getElementById("cnfpswd").value;
+            if(pass != cnpass) {
+                alert("Password and confirm password must be same!")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
